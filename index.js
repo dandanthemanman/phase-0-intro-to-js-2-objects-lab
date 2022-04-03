@@ -1,1 +1,29 @@
-// Write your solution in this file!
+// built & burned 3x 3/24
+// built and burned 4/3
+
+let employee = {
+    name: "Duncy Dan",
+    address: "1234 Coolguy Drive"
+}
+
+function updateEmployeeWithKeyAndValue(employee, key, value) {
+    let newEmployee= {...employee};
+    newEmployee[key] = value;
+    return newEmployee;
+}
+
+function destructivelyUpdateEmployeeWithKeyAndValue(employee, key, value) {
+    employee[key]=value;
+    return employee;
+}
+
+function deleteFromEmployeeByKey(employee, key) {
+    let newEmployee= {...employee};
+    delete newEmployee[key];
+    return newEmployee;
+} 
+
+function destructivelyDeleteFromEmployeeByKey(employee, key) {
+    delete employee[key];
+    return employee;
+}
